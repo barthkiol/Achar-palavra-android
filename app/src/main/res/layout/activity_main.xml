@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/findWord"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="60dp"
+        android:text="Achar Palavra"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="120dp"
+        android:text=" Palavra"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/findWord" />
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNext">
+
+        <Button
+            android:id="@+id/btnC"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="18dp"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/btnV"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="18dp"
+            android:text="V" />
+
+        <Button
+            android:id="@+id/btnP"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="18dp"
+            android:text="P" />
+
+        <Button
+            android:id="@+id/btnB"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:text="B" />
+
+        <Button
+            android:id="@+id/btnK"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:text="K" />
+
+        <Button
+            android:id="@+id/btnA"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+
+            android:text="A" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Proximo"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/word" />
+
+    <Button
+        android:id="@+id/btnListen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ouvir"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toEndOf="@+id/word"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.655" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
